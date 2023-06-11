@@ -1,0 +1,244 @@
+.product-list-container {
+    width: 90%;
+    height: 700px;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navBar {
+    width: 100%;
+    height: 60px;
+    background-color: #f1f0f0;
+    /* border: 1px solid red; */
+}
+
+#navBar>.menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.filters {
+    flex-basis: 20%;
+    padding-right: 20px;
+}
+
+.filters h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filters h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contentDiv {
+    width: 90%;
+    height: 700px;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentDiv>.filter_div {
+    width: 30%;
+    height: 94%;
+    /* border: 1px solid blue; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.checkBoxDiv {
+    width: 60%;
+    height: auto;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid yellow; */
+    padding: 1px;
+}
+
+.checkBoxDiv>.check_box {
+    width: 80%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 7px;
+}
+
+.checkBoxDiv>h5 {
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.contentDiv>.product_list_div {
+    width: 65%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    /* border: 1px solid green; */
+    /* overflow: auto; */
+}
+
+.product-item {
+    width: 220px;
+    height: 205px;
+    /* border: 1px solid orange; */
+    position: relative;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.product-item > img {
+    width: 100%;
+    height: 104px;
+    margin-bottom: 11px;
+}
+
+.product-item h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.product-item > .item_details {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.item_details > p {
+    font-weight: bold;
+}
+
+.item_details > button {
+    width: 40%;
+    height: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-top: -7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-item > .product-item {
+    position: absolute;
+    left: 5%;
+    font-family: sans-serif;
+    top: 2%;
+    color: #08345b;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-basis: 75%;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.search-input {
+    width: 40%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 20%;
+    margin-top: 5%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.search-input input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    outline: none;
+}
+
+.search-icon {
+    width: 47px;
+    height: 40px;
+    margin-right: auto;
+    margin-left: 5px;
+    /* border: 1px solid red; */
+    background-color: #979292;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-icon > i{
+    color: white;
+    font-weight: 100;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* .product-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+} */
+
+/* .product-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+} */
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.filter-item {
+    margin-right: 10px;
+}
+
+.filter-item label {
+    margin-right: 5px;
+}
+
+.filter-item select {
+    padding: 5px;
+}
+
+@media (max-width: 767px) {
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filter-item {
+        margin-bottom: 10px;
+        flex: 1 1 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Add any additional styling as per your requirement */
